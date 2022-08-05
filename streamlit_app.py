@@ -12,3 +12,5 @@ streamlit.text ('🥗 spinach')
 streamlit.text("🐔 chicken")
 streamlit.text('🥑 avacado")
 streamlit.text('🍞 bread")
+
+streamlit.header("🍌🥭Special menu item 🥝🍇")
