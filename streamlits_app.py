@@ -17,7 +17,7 @@ streamlit.text("🐔 chicken")
 streamlit.text('🥑 avacado')
 streamlit.text('🍞 bread')
 
-streamlit.header("🍌🥭Special menu item 🥝🍇")
+streamlit.header("🍌🥭Build your own fruit smothie 🥝🍇")
 my_fruit_list = pandas.read_csv("https://uni-lab-files.s3.us-west-2.amazonaws.com/dabw/fruit_macros.txt")
 my_fruit_list = my_fruit_list.set_index('Fruit')
 
@@ -42,5 +42,6 @@ streamlit.header("the fruit load list contains:")
 streamlit.dataframe(my_data_rows)
 choice=streamlit.text_input("What fruit would u like to add?","jackfruit")
 streamlit.write("thanks for adding ",choice)
+my_cur.execute("insert into fruit_load_list values ('from steamlit')")
 
 
